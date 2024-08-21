@@ -6,3 +6,12 @@ export function reverse(input){
     }
     return holder;
 }
+
+export function palindrome(input) {
+    input = input.replace(" ", "")
+    if (input == reverse(input)) {
+        return true;
+    } else {
+        return false;
+    }
+}
