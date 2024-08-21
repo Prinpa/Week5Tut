@@ -15,3 +15,17 @@ export function palindrome(input) {
         return false;
     }
 }
+
+export function truncate(input, length) {
+    let temp = "";
+    if (length  > input.length) { 
+        length = input.length;
+    }
+    for (let i = 0; i < length; i++) {
+        temp += input[i];
+    }
+    if (length  < input.length) {
+        temp += "...";
+    }
+    return temp;
+}
